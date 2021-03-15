@@ -17,7 +17,7 @@
 
 ## Requisitos
 
--A aplicação em si não precisa de nenhuma tecnologia especifica, basta fazer a manipulação dos arquivos para o FTP que ir funcionar.
+-A aplicação em si não precisa de nenhuma tecnologia especifica, basta fazer a manipulação dos arquivos no FTP que ira funcionar.
 
 
 ## Como executar
