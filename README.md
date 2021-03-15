@@ -1,37 +1,35 @@
--
-##desafioWes - Vaga Dev
--
-Repositório criado para armazenar o conteúdo do desafio proposto pela Kinghost.
 
--
-##Qual objetivo do projeto
--
-Esse projeto visa criar um front-end para consumir a [I'm an inline-style link](https://developer.marvel.com/documentation/authorization)
+## DesafioWes - Vaga Dev
 
--
-##Tecnologias Utilizadas
--
+-Repositório criado para armazenar o conteúdo do desafio proposto pela Kinghost.
 
-JavaScript, HTML, CSS - Utilizei pois e a linguagem que tenho um pouco de conhecimento e estou estudando ultimanente.
 
--
-##Requisitos
--
-- A aplicação em si não precisa de nenhuma tecnologia especifica, basta fazer a manipulação dos arquivos para o FTP que ir funcionar.
+## Qual objetivo do projeto
 
--
-##Como executar
--
-Basta clonar esse repositorio: 
+-Esse projeto visa criar um front-end para consumir a [API da Marvel](https://developer.marvel.com/documentation/authorization)
+
+
+## Tecnologias Utilizadas
+
+
+-JavaScript, HTML, CSS - Utilizei pois e a linguagem que tenho um pouco de conhecimento e estou estudando ultimanente.
+
+
+## Requisitos
+
+-A aplicação em si não precisa de nenhuma tecnologia especifica, basta fazer a manipulação dos arquivos para o FTP que ir funcionar.
+
+
+## Como executar
+
+- Basta clonar esse repositorio: 
 git clone https://github.com/wesleibl/desafioWes.git
 
--
--
 
--
-##Como funciona a conexao a API
--
-Nos arquivos .html, possuem a tag <script> dentro do script, foi criado um fetch() fazendo a conexao com url distintas de cada personagem.
+
+## Como funciona a conexao a API
+
+-Nos arquivos .html, possuem a tag <script> dentro do script, foi criado um fetch() fazendo a conexao com url distintas de cada personagem.
 Foi preciso gerar a Key de autenticação no site da Marvel: https://developer.marvel.com/docs
   
 -Deve fazer um hash de md5(ts+privateKey+publicKey)
@@ -42,7 +40,7 @@ no exemplo um usuario com a chave: public key of "1234" e a private key of "abcd
 let hero = data.data.results[0]
 ou seja, a varivel hero agora ja esta na posição inicial para fazer as buscas.
 
-- Na função exibirNome()
+-Na função exibirNome()
 declaramos novamente a variavel hero para reconhcer a função getContent()
 utilizando o  document.getElementById() conseguimos pegar a informação da API e passar para ID que esta declarada mais abaixo no HTML, detalhe nesse caso ser que nas thumbnails elas precisam especificar o .path e o .extension então foi necessario usar uma concatenação para unificar ambos, conforme abaixo:
 let imgIron = `${hero.thumbnail.path}${'.'}${hero.thumbnail.extension}`
