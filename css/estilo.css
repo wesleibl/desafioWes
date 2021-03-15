@@ -1,34 +1,8 @@
-/*
-* 
-* @author Jamilton Damasceno
-*/
-
-/*Layout 
-#35E6A3 - verde
-#685FFB - azul 
-#7429FE - roxo
-#000000 - preto
-
-h3 {
-  font-size: 72px;
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-
-Deixa o fundo estatico background-attachment: fixed;
-*/
 html, body, #home {
 	height: 100%;
 	overflow-x: hidden;
 }
 
-/*	
-	url(../imagens/ruido.png),
-	background-attachment: fixed;	
-*/
- /*url(../imagens/green.png),*/
 body { 
 	background:
 				url(../imagens/),
@@ -40,11 +14,6 @@ body {
 body p{
 	text-justify: auto;
 }
-
-/*Barra de navegação 
-.navbar-light .navbar-nav .nav-link{
-modifica a classe ja criada
-*/
 
 nav.navbar-transparente {
 	background: rgba(0,0,0,0.6);
@@ -137,14 +106,6 @@ nav.navbar-transparente {
 }
 /*Estrutura de conteudos */
 
-
-/*.rotacionar {
-	-ms-transform:rotate(30deg);
-	-webkit-transform: rotate(30deg);
-	transform: rotate(30deg);
-	padding-left: 80px;
-}
-*/
 /*IDs*/
 
 #servicos {
